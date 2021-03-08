@@ -1,0 +1,48 @@
+@import "variablesAndFunctions";
+
+body {
+    position: relative;
+}
+
+.wholeContainer {
+    padding: 0;
+
+    .carouselContainer {
+        padding: 0;
+
+        .carouselTranslation {
+            .carouselSlide {
+                padding: 0px; /* Not mandatory but allows to place a space between two slides */
+
+                .contentSlide {
+                    @include borderRadius(0px);
+                    background: radial-gradient(circle at 100%, rgb(157, 193, 207) 63%, rgb(192, 169, 207) 63%);
+                    font-size: 40px;
+                }
+
+                &:nth-child(even) {
+                    .contentSlide {
+                        background: radial-gradient(circle at 0%, rgb(157, 193, 207) 63%, rgb(192, 169, 207) 63%);
+                    }
+                }
+            }
+        }
+    }
+
+    .carouselNavBtn {
+        @include widthAndHeight(60px, 60px);
+        position: absolute;
+        z-index: 2;
+
+        .material-icons {
+            font-size: 50px;
+        }
+    }
+
+    .previous {
+        left: 0%;
+    }
+    .next {
+        right: 0%;
+    }
+}

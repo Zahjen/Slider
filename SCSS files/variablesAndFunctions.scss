@@ -1,0 +1,35 @@
+// Functions and variables declaration
+
+@mixin initialization() {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin flex($direction, $justifyContent, $alignItem) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifyContent;
+    align-items: $alignItem;
+}
+
+@mixin widthAndHeight($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin transition($transition) {
+    transition: $transition;
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+}
+
+@mixin borderRadius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+}

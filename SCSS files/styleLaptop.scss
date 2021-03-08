@@ -1,0 +1,24 @@
+@import "variablesAndFunctions";
+
+.wholeContainer {
+    padding: 40px 0;
+
+    .carouselContainer {
+        .carouselTranslation {
+            .carouselSlide {
+                .contentSlide {
+                    @include borderRadius(30px);
+                    font-size: 60px;
+                }
+            }
+        }
+    }
+
+    .carouselNavBtn {
+        @include widthAndHeight(70px, 60px);
+
+        .material-icons {
+            font-size: 60px;
+        }
+    }
+}

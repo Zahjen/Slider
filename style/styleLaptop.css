@@ -1,0 +1,22 @@
+.wholeContainer {
+  padding: 40px 0;
+}
+
+.wholeContainer .carouselContainer .carouselTranslation .carouselSlide .contentSlide {
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  font-size: 60px;
+}
+
+.wholeContainer .carouselNavBtn {
+  width: 70px;
+  height: 60px;
+}
+
+.wholeContainer .carouselNavBtn .material-icons {
+  font-size: 60px;
+}
+/*# sourceMappingURL=styleLaptop.css.map */

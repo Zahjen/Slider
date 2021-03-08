@@ -1,0 +1,50 @@
+body {
+  position: relative;
+}
+
+.wholeContainer {
+  padding: 0;
+}
+
+.wholeContainer .carouselContainer {
+  padding: 0;
+}
+
+.wholeContainer .carouselContainer .carouselTranslation .carouselSlide {
+  padding: 0px;
+  /* Not mandatory but allows to place a space between two slides */
+}
+
+.wholeContainer .carouselContainer .carouselTranslation .carouselSlide .contentSlide {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  background: radial-gradient(circle at 100%, #9dc1cf 70%, #c0a9cf 70%);
+  font-size: 50px;
+}
+
+.wholeContainer .carouselContainer .carouselTranslation .carouselSlide:nth-child(even) .contentSlide {
+  background: radial-gradient(circle at 0%, #9dc1cf 70%, #c0a9cf 70%);
+}
+
+.wholeContainer .carouselNavBtn {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 2;
+}
+
+.wholeContainer .carouselNavBtn .material-icons {
+  font-size: 70px;
+}
+
+.wholeContainer .previous {
+  left: 0%;
+}
+
+.wholeContainer .next {
+  right: 0%;
+}
+/*# sourceMappingURL=styleTablet.css.map */

@@ -1,0 +1,56 @@
+@import "variablesAndFunctions";
+
+* {
+    @include initialization();
+}
+
+body {
+    @include widthAndHeight(100vw, 100vh);
+    background: radial-gradient(circle at 0%, rgb(218, 179, 198) 75%, rgb(192, 169, 207) 75%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.wholeContainer {
+    @include flex(row, space-between, center);
+    @include widthAndHeight(100%, 100%);
+    padding: 60px 0;
+
+    .carouselContainer {
+        @include widthAndHeight(100%, 100%);
+        margin: 0 auto;
+        padding: 0;
+        overflow: hidden;
+
+        .carouselTranslation {
+            @include widthAndHeight(100%, 100%);
+            @include transition(transform 0.4s ease-in-out);
+            display: flex;
+
+            .carouselSlide {
+                @include widthAndHeight(100%, 100%);
+                padding: 0 30px; /* Not mandatory but allows to place a space between two slides */
+                flex-shrink: 0; /* Does not shrink the box */
+
+                .contentSlide {
+                    @include flex(row, center, center);
+                    @include widthAndHeight(100%, 100%);
+                    @include borderRadius(50px);
+                    background: radial-gradient(circle at 100%, rgb(157, 193, 207) 75%, rgb(192, 169, 207) 75%);
+                    font-size: 70px;
+                }
+            }
+        }
+    }
+
+    .carouselNavBtn {
+        @include widthAndHeight(95px, 95px);
+        background-color: transparent;
+        border: none;
+        outline: none;
+
+        .material-icons {
+            font-size: 90px;
+            pointer-events: none;
+        }
+    }
+}

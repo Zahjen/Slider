@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,eAAe,CAAC;EACZ,OAAO,EAAE,MAAM;CAoBlB;;AArBD,AAMgB,eAND,CAGX,kBAAkB,CACd,oBAAoB,CAChB,cAAc,CACV,aAAa,CAAC;ECqB1B,aAAa,EDpByB,IAAI;ECqB1C,qBAAqB,EDrBiB,IAAI;ECsB1C,kBAAkB,EDtBoB,IAAI;ECuB1C,iBAAiB,EDvBqB,IAAI;ECwB1C,gBAAgB,EDxBsB,IAAI;EAC1B,SAAS,EAAE,IAAI;CAClB;;AATjB,AAcI,eAdW,CAcX,eAAe,CAAC;ECAhB,KAAK,EDCuB,IAAI;ECAhC,MAAM,EDA4B,IAAI;CAKrC;;AApBL,AAiBQ,eAjBO,CAcX,eAAe,CAGX,eAAe,CAAC;EACZ,SAAS,EAAE,IAAI;CAClB",
+    "sources": [
+        "styleLaptop.scss",
+        "variablesAndFunctions.scss"
+    ],
+    "names": [],
+    "file": "styleLaptop.css"
+}

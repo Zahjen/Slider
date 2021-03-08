@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle at 0%, #dab3c6 75%, #c0a9cf 75%);
+  font-family: 'Poppins', sans-serif;
+}
+
+.wholeContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 60px 0;
+}
+
+.wholeContainer .carouselContainer {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+.wholeContainer .carouselContainer .carouselTranslation {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -webkit-transition: transform 0.4s ease-in-out;
+  -moz-transition: transform 0.4s ease-in-out;
+  -ms-transition: transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wholeContainer .carouselContainer .carouselTranslation .carouselSlide {
+  width: 100%;
+  height: 100%;
+  padding: 0 30px;
+  /* Not mandatory but allows to place a space between two slides */
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  /* Does not shrink the box */
+}
+
+.wholeContainer .carouselContainer .carouselTranslation .carouselSlide .contentSlide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  background: radial-gradient(circle at 100%, #9dc1cf 75%, #c0a9cf 75%);
+  font-size: 70px;
+}
+
+.wholeContainer .carouselNavBtn {
+  width: 95px;
+  height: 95px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.wholeContainer .carouselNavBtn .material-icons {
+  font-size: 90px;
+  pointer-events: none;
+}
+/*# sourceMappingURL=style.css.map */
